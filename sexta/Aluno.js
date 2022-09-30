@@ -1,18 +1,18 @@
 // Classe do Aluno
 module.exports = class Aluno{
     // Caracteristica = Propriedades do Aluno
-    constructor(matricula, nome, idade, nota ){
+    constructor(matricula, nome, idade, curso ){
         this.matricula = matricula
         this.nome = nome
         this.idade = idade
-        this.nota = nota
+        this.curso = curso
     }
 
     maior(){
         return this.idade >= 18
     }
 
-    aprovado(){
-        return this.nota >= 6
+    toString(){
+        return `O aluno ${this.nome} tem ${this.idade} anos`
     }
 }

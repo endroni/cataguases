@@ -1,13 +1,16 @@
 // Requerendo, chamando a classe Aluno
 const Aluno = require("./Aluno")
 
-// Criar um objeto, instanciar a classe
-const aluno1 = new Aluno(001, "Rubem", 15, 6)
+// Requerendo, chamando a classe Curso
+const Curso = require("./Curso")
 
-const aluno2 = new Aluno(002, "Pedro", 16)
+// Criar um objeto, instanciar a classe
+const cursoTiago = new Curso(101, "BackEnd", 7)
+const alunoTiago = new Aluno(001, "Tiago", 15, cursoTiago )
+
 
 // Exibir os dados
 console.log(
-    aluno1.aprovado()
+    alunoTiago
 )
 
