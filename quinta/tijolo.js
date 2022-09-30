@@ -42,6 +42,5 @@ console.log(
 
 
 
-
 // let // local
 //var // global
