@@ -13,6 +13,6 @@ module.exports = class Aluno{
     }
 
     toString(){
-        return `O aluno ${this.nome} tem ${this.idade} anos`
+        return `O aluno ${this.nome} tem ${this.idade} anos.`
     }
 }

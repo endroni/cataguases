@@ -3,17 +3,16 @@ module.exports = class Curso{
         this.id = id
         this.nome = nome
         this.nota = nota
-        this.resultado = "Aaaa"
+        this.resultado = this.status()
     }
 
-    static status(){
+    status(){
         if (this.nota >= 6){
-            this.resultado = "aprovado"
+            return "aprovado"
         } else {
-            this.resultado = "reprovado"
-        } 
-        return this.resultado       
-    }
+            return "reprovado"
+        }              
+    }    
 
     toString(){        
         return "O aluno " + this.nome + ", esta " + this.status()
